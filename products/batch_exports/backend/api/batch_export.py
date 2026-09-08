@@ -41,7 +41,12 @@ from posthog.models.integration import (
     DatabricksIntegrationError,
     Integration,
 )
-from posthog.security.url_validation import resolve_and_validate_host
+from posthog.security.url_validation import (
+    INVALID_HOST_MESSAGE,
+    UNREACHABLE_HOST_MESSAGE,
+    ShapeError,
+    validate_external_host,
+)
 from posthog.temporal.common.client import sync_connect
 from posthog.utils import relative_date_parse, str_to_bool
 
@@ -1080,9 +1085,6 @@ class _DatabaseFieldFinder(TraversingVisitor):
         super().visit_field(node)
 
 
-INVALID_HOST_MESSAGE = "Invalid host. Enter a hostname or IP address without credentials, scheme, or path."
-
-
 class BatchExportSerializer(serializers.ModelSerializer):
     """Serializer for a BatchExport model."""
 
@@ -1620,9 +1622,11 @@ class BatchExportSerializer(serializers.ModelSerializer):
 
             if host is not None:
                 try:
-                    resolve_and_validate_host(host)
-                except ValueError:
+                    validate_external_host(host)
+                except ShapeError:
                     raise serializers.ValidationError(INVALID_HOST_MESSAGE)
+                except ValueError:
+                    raise serializers.ValidationError(UNREACHABLE_HOST_MESSAGE)
 
         return destination_attrs
 
