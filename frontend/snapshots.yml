@@ -1825,9 +1825,9 @@ snapshots:
     components-product-empty-state--early-access-features-needs-setup--light:
         hash: v1.k794b7964.563633a4174e6b82faff11a7d2c874fb50a28882f4b4657fdcab70cdb88b479f.mEBCqNYE4cD9VvOJqQs8Z50S9eRIL1HOnu9MNHbIoPQ
     components-product-empty-state--empty-no-action--dark:
-        hash: v1.k794b7964.01f56e9e0d751a5c0fd6cd2adee993fd8d3b1edce8c3db666da93336ca655590.zbVyer02lJY_tFXGrLIB2hZO_hwO2JxrCpe-IqphV4U
+        hash: v1.k794b7964.6d07321d951e9c7bf3bf7de4b49b599f16a8584340cb77a78e270a5010218db0.bnlqCCe_LJ1XmziLkFnZ9-hsJTDknXFwdqF7_foBC7A
     components-product-empty-state--empty-no-action--light:
-        hash: v1.k794b7964.b5d3c521caacfe06bfcfb89d804c837739a3f79939cf0bbcd03816efda6e996e.YAL5mcFzZzzKkSykVs51A2VnsgflSQytExobzaRe-f4
+        hash: v1.k794b7964.45c59fd202ecac44444ee767f2a1f83d402a8be9a2efde2524250a523646fe39.B_5Ra_bXUmrcMfNogUoeXxjntTGRMsVzOs1xxIGZb2c
     components-product-empty-state--empty-with-action--dark:
         hash: v1.k794b7964.6fb2d5feff1fa62c3ed888268602b4eb017f75d33178538542ee4a6d28072fc3.6uOkXnAq1kHhkU8QtOWmFY2eJik3PqRUQegVam-OCGI
     components-product-empty-state--empty-with-action--light:
@@ -1904,10 +1904,6 @@ snapshots:
         hash: v1.k794b7964.f871f80c2e0437044742c14a0db2f29109168ec4dcb8ccec7e6fd814248bfc3f.GEM_Stq79cSU_62UY6840MfBQiGz-SJZ1u9dW5JG_pQ
     components-product-empty-state--metrics-needs-setup--light:
         hash: v1.k794b7964.508b62772da1dcd8700e677010732092b48e105cf837a8b074aa0bf5522abb9e.RySrCBS1xNDjeB8G8w7HObsdeP2ZssrvUNfm-We6Vpc
-    components-product-empty-state--not-empty-with-action--dark:
-        hash: v1.k794b7964.e344a03ab4fb6bbef2cf88d2b89c12bccfe1b5307e5e80051e47ad6adec22d93.w4TEddGy6INFXoaPeIr201fD_4xWA6jG0Uugfke9ytM
-    components-product-empty-state--not-empty-with-action--light:
-        hash: v1.k794b7964.1500e8a17e5bfb2cdc59cea8794c8499622f0218ea6a7dc2bdde259d044d3235.IqteBA6dHdaJztqTmvDTi_IdMolu_vwld3w7xHahpvo
     components-product-empty-state--notebooks-needs-setup--dark:
         hash: v1.k794b7964.be9dec9126ce31f33d3c19f4cd94cbc7602c6d102365f841197dbbdc66dd6349.L9TQMe38uFWnpl9gSVpRkebTBH24Gpkxgug29h0eojo
     components-product-empty-state--notebooks-needs-setup--light:
